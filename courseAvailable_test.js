@@ -7,7 +7,7 @@ let UserTestList = ["user_free","user_instructor","user_OTP",
 
 
 UserTestList.forEach(function(user) {
-    if(true){
+    if(false){
 	    Scenario( data[user].type + ': Login', (I) => {
 		    I.amOnPage('/login/');
 		    I.see('Login');
