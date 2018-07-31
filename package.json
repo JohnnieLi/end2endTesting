@@ -5,6 +5,7 @@
   "scripts": {
     "start": "./node_modules/.bin/codeceptjs run --steps",
     "supported": "./node_modules/.bin/codeceptjs run-multiple supported --steps",
+    "stress": "./node_modules/.bin/codeceptjs run-multiple stress --steps",
     "install": "./node_modules/.bin/selenium-standalone install",
     "start-browser": "./node_modules/.bin/selenium-standalone start"
   },

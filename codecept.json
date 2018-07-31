@@ -1,11 +1,11 @@
 {
-  "name": "mlmw-tests",
+  "name": "ATBI-tests",
   "tests": "./*_test.js",
   "timeout": 10000,
   "output": "./output",
   "helpers": {
     "WebDriverIO": {
-      "url": "https://www.autobestinfo.com",
+      "url": "https://development.autobestinfo.com",
       "browser": "chrome",
       "windowSize": "maximize",
       "restart": false,
@@ -25,6 +25,51 @@
   "multiple": {
     "supported": {
       "browsers": [
+        {
+          "browser": "chrome",
+          "windowSize": "maximize"
+        },
+        {
+          "browser": "firefox",
+          "windowSize": "maximize"
+        },
+        {
+          "browser": "MicrosoftEdge",
+          "windowSize": "maximize"
+        }
+      ]
+    },
+
+    "stress": {
+      "browsers": [
+        {
+          "browser": "chrome",
+          "windowSize": "maximize"
+        },
+        {
+          "browser": "chrome",
+          "windowSize": "maximize"
+        },
+        {
+          "browser": "chrome",
+          "windowSize": "maximize"
+        },
+        {
+          "browser": "chrome",
+          "windowSize": "maximize"
+        },
+        {
+          "browser": "chrome",
+          "windowSize": "maximize"
+        },
+        {
+          "browser": "chrome",
+          "windowSize": "maximize"
+        },
+        {
+          "browser": "chrome",
+          "windowSize": "maximize"
+        },
         {
           "browser": "chrome",
           "windowSize": "maximize"
