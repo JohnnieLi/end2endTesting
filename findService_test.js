@@ -2,24 +2,36 @@ Feature('find services');
 let data = require('./app.config.js');
 
 if(true){
-    Scenario('find course', (I) => {
-        I.amOnPage('/home/');
-        I.click('License & Training');
-        I.waitInUrl('/home/course');
-        I.waitForText('License Translation and Training Course');
-    });
-    
-    Scenario('find lawyer/Insurance', (I) => {
-        I.click('Insurance & Lawyers');
-        I.waitInUrl('/home/insurance');
-        I.waitForText('Insurance and Lawyers');
-    });
-    
+
     Scenario('find dealer', (I) => {
-        I.click('Dealers');
-        I.waitInUrl('/home/dealer');
-        I.waitForText('Car dealers');
+        I.amOnPage('/home/');
+        I.click('Dealers','.new_prod_wrapper');
+        I.waitForText('All / Dealers');
+        I.click("More Info")
+        I.waitInUrl('/service/detail/');
+        I.click('.follow-btn');
+        I.seeElement('.mat-dialog-container');
+        I.click('.close');
     });
+
+
+    // Scenario('find course', (I) => {
+    //     I.amOnPage('/home/');
+    //     I.click('License & Training','.slick-list');
+    //     I.waitForText('All / License & Training');
+    // });
+    
+    // Scenario('find lawyer/Insurance', (I) => {
+    //     I.click('Insurance & Lawyers', '.new_prod_wrapper');
+    //     I.waitForText('All / Insurance & Lawyers');
+    // });
+
+    // Scenario('find Car Stores', (I) => {
+    //     I.click('Car Stores', '.new_prod_wrapper');
+    //     I.waitForText('All / Car Shops');
+    // });
+    
+    
     
     // Scenario('find Car Repair', (I) => {
     // 	I.click('Car Repair');

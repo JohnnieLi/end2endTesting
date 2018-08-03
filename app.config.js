@@ -1,8 +1,6 @@
 module.exports = {
-	"user_free": {
-		"type":"Free Membership",
-		"username": 'jiangqi.li@wikidtools.com',
-		"password": 'PbPB!$F^',
-		"homeUrl":"home-free-membership"
+	"user_john": {
+		"username": '704364327@qq.com',
+		"password": 'test123',
 	}
 };
